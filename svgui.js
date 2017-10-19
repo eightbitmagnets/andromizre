@@ -21,6 +21,12 @@ $(document).ready(function() {
       var popupMargin = (height - boxHeight) / 2;
       aboutBox.style.marginTop = popupMargin + 'px';
     });
+  
+  // Animate Logo
+  $('#animated-logo').addClass('logo-opacity-in');
+  setTimeout(function() {
+    $('#animated-logo').removeClass('opacity0');
+  },290);
 
   // After Logo animation, make contents visible
   var startScreen = document.getElementById('start-screen'),

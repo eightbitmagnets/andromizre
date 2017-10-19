@@ -128,7 +128,6 @@ input:focus, select:focus, textarea:focus, button:focus {
 #about-text, #no-input-text, #shuffle-error-text, #dupe-item-text {
   display: none;
 }
-
 .start-screen {
   display:block;
   width:100%;
@@ -149,6 +148,7 @@ input:focus, select:focus, textarea:focus, button:focus {
   padding:0;
   z-index: 3;
 }
+.opacity0 { opacity: 0; }
 .invisible-wrapper{
   opacity:0;
   display:none;
@@ -402,10 +402,17 @@ input:focus, select:focus, textarea:focus, button:focus {
   animation: action-mouseover .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
 }
 .action-mouseout {
-  -webkit-animation: action-mouseout .4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
-  animation: action-mouseout .4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+  -webkit-animation: action-mouseout .2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+  animation: action-mouseout .2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
 }
-
+.logo-opacity-in {
+  -webkit-animation: fade-in 3s linear 1;
+  animation: fade-in 3s linear 1;
+}
+.logo-opacity-out {
+  -webkit-animation: fade-out 3s linear 1;
+  animation: fade-out 3s linear 1;
+}
 @-webkit-keyframes fade-out {
   0% {
     opacity: 1;
