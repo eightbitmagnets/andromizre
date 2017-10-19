@@ -406,13 +406,87 @@ input:focus, select:focus, textarea:focus, button:focus {
   animation: action-mouseout .2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
 }
 .logo-opacity-in {
-  -webkit-animation: fade-in 3s linear 1;
-  animation: fade-in 3s linear 1;
+  -webkit-animation: fade-in 3s linear 1s 1;
+  animation: fade-in 3s linear 1s 1;
 }
 .logo-opacity-out {
-  -webkit-animation: fade-out 3s linear 1;
-  animation: fade-out 3s linear 1;
+  -webkit-animation: fade-out 3s linear 10.5s 1;
+  animation: fade-out 3s linear 10.5s 1;
 }
+.r1 {
+  -webkit-animation: r1 5s cubic-bezier(0.35, 0.2, 0.2, 1) 4s 1 forwards;
+  animation: r1 5s cubic-bezier(0.35, 0.2, 0.2, 1) 4s 1 forwards;
+}
+@-webkit-keyframes r1 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(334px, -59px);}
+}
+@keyframes r1 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(334px, -59px);}
+}
+.a {
+  -webkit-animation: a 5s cubic-bezier(0.35, 0.2, 0.2, 1) 4.5s 1 forwards;
+  animation: a 5s cubic-bezier(0.35, 0.2, 0.2, 1) 4.5s 1 forwards;
+}
+@-webkit-keyframes a {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-109px, 20px);}
+}
+@keyframes a {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-109px, 20px);}
+}
+.n {
+  -webkit-animation: n 5s cubic-bezier(0.35, 0.2, 0.2, 1) 4.75s 1 forwards;
+  animation: n 5s cubic-bezier(0.35, 0.2, 0.2, 1) 4.75s 1 forwards;
+}
+@-webkit-keyframes n {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-108px, 20px);}
+}
+@keyframes n {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-108px, 20px);}
+}
+.d {
+  -webkit-animation: d 5s cubic-bezier(0.35, 0.2, 0.2, 1) 5s 1 forwards;
+  animation: d 5s cubic-bezier(0.35, 0.2, 0.2, 1) 5s 1 forwards;
+}
+@-webkit-keyframes d {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-109px, 13);}
+}
+@keyframes d {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-109px, 13px);}
+}
+.e {
+  -webkit-animation: e 3s cubic-bezier(0.35, 0.2, 0.2, 1) 5s 1 forwards;
+  animation: e 3s cubic-bezier(0.35, 0.2, 0.2, 1) 5s 1 forwards;
+}
+@-webkit-keyframes e {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(110px, -20px);}
+}
+@keyframes e {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(110px, -20px);}
+}
+.r2 {
+  -webkit-animation: r2 3s cubic-bezier(0.35, 0.2, 0.2, 1) 5.2s 1 forwards;
+  animation: r2 3s cubic-bezier(0.35, 0.2, 0.2, 1) 5.2s 1 forwards;
+}
+@-webkit-keyframes r2 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-99px, 18px);}
+}
+@keyframes r2 {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-99px, 18px);}
+}
+
+
 @-webkit-keyframes fade-out {
   0% {
     opacity: 1;

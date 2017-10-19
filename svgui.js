@@ -26,7 +26,17 @@ $(document).ready(function() {
   $('#animated-logo').addClass('logo-opacity-in');
   setTimeout(function() {
     $('#animated-logo').removeClass('opacity0');
-  },290);
+    setTimeout(function() {
+      $('#animated-logo').removeClass('logo-opacity-in');
+    },1000);
+  },3000);
+  setTimeout(function() {
+    $('#animated-logo').addClass('logo-opacity-out');
+    setTimeout(function() {
+      $('#animated-logo').addClass('opacity0');
+    },3000);
+  },10000);
+  
 
   // After Logo animation, make contents visible
   var startScreen = document.getElementById('start-screen'),
@@ -39,22 +49,19 @@ $(document).ready(function() {
       $('div.invisible-wrapper').addClass('fade-in');
       setTimeout(function() {
         invisibleWrapper.style.opacity = '1';
-        //$('button.shuffle').addClass('open-grow1');
       },300);
 
       // Remove Clear Button's start class since its animation is delayed
       setTimeout(function() {
         if (invisibleWrapper.style.display == 'block') {
          $('button.clear').removeClass('start');
-         //$('button.clear').addClass('open-grow2');
         }
       },150);
-
       setTimeout(function() {
         $('div.invisible-wrapper').removeClass('fade-in');
       },350);
     }
-  },11000);
+  },15000);
 
   // Animate action buttons on hover and focus on
     // hover
