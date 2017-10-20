@@ -410,8 +410,8 @@ input:focus, select:focus, textarea:focus, button:focus {
   animation: fade-in 3s linear 1s 1;
 }
 .logo-opacity-out {
-  -webkit-animation: fade-out 3s linear 10.5s 1;
-  animation: fade-out 3s linear 10.5s 1;
+  -webkit-animation: fade-out 3s linear 1;
+  animation: fade-out 3s linear 1;
 }
 .r1 {
   -webkit-animation: r1 5s cubic-bezier(0.35, 0.2, 0.2, 1) 4s 1 forwards;

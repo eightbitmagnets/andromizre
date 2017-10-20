@@ -25,7 +25,7 @@ $(document).ready(function() {
   // Animate Logo
   $('#animated-logo').addClass('logo-opacity-in');
   setTimeout(function() {
-    $('#animated-logo').removeClass('opacity0');
+    animatedLogo.style.opacity = 1;
     setTimeout(function() {
       $('#animated-logo').removeClass('logo-opacity-in');
     },1000);
@@ -33,9 +33,9 @@ $(document).ready(function() {
   setTimeout(function() {
     $('#animated-logo').addClass('logo-opacity-out');
     setTimeout(function() {
-      $('#animated-logo').addClass('opacity0');
+      animatedLogo.style.opacity = 0;
     },3000);
-  },10000);
+  },11000);
   
 
   // After Logo animation, make contents visible
@@ -61,7 +61,7 @@ $(document).ready(function() {
         $('div.invisible-wrapper').removeClass('fade-in');
       },350);
     }
-  },15000);
+  },10000);
 
   // Animate action buttons on hover and focus on
     // hover
